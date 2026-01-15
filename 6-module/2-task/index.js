@@ -6,8 +6,12 @@ export default class ProductCard {
 
     this.render();
   }
+
+  get elem() {
+    return this._elem;
+  }
   render() {
-    this.elem = createElement(`<div class="card">
+    this._elem = createElement(`<div class="card">
       <div class="card__top">
         <img src="/assets/images/products/${this.product.image}" 
              class="card__image" alt="product">
@@ -21,8 +25,8 @@ export default class ProductCard {
       </div>
     </div>`);
 
-    this.elem.querySelector(".card__button").addEventListener("click", () => {
-      this.elem.dispatchEvent(
+    this._elem.querySelector(".card__button").addEventListener("click", () => {
+      this._elem.dispatchEvent(
         new CustomEvent("product-add", {
           // имя события должно быть именно "product-add"
           detail: this.product.id, // Уникальный идентификатора товара из объекта товара
