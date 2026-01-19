@@ -1,38 +1,38 @@
 export default [
   {
-    id: '',
-    name: 'All'
+    id: "",
+    name: "All",
   },
   {
-    id: 'salads',
-    name: 'Salads'
+    id: "salads",
+    name: "Salads",
   },
   {
-    id: 'soups',
-    name: 'Soups'
+    id: "soups",
+    name: "Soups",
   },
   {
-    id: 'chicken-dishes',
-    name: 'Chicken dishes'
+    id: "chicken-dishes",
+    name: "Chicken dishes",
   },
   {
-    id: 'beef-dishes',
-    name: 'Beef dishes'
+    id: "beef-dishes",
+    name: "Beef dishes",
   },
   {
-    id: 'seafood-dishes',
-    name: 'Seafood dishes'
+    id: "seafood-dishes",
+    name: "Seafood dishes",
   },
   {
-    id: 'vegetable-dishes',
-    name: 'Vegetable dishes'
+    id: "vegetable-dishes",
+    name: "Vegetable dishes",
   },
   {
-    id: 'bits-and-bites',
-    name: 'Bits and bites'
+    id: "bits-and-bites",
+    name: "Bits and bites",
   },
   {
-    id: 'on-the-side',
-    name: 'On the side'
-  }
+    id: "on-the-side",
+    name: "On the side",
+  },
 ];
