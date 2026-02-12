@@ -191,9 +191,7 @@ export default class Cart {
     });
 
     let result = await response.json();
-    const modalTitle = this.modal.modal.querySelector(".modal__title");
-    modalTitle.innerHTML = "";
-    modalTitle.append(createElement(`<span>Success!</span>`));
+    this.modal.setTitle(`Success!`);
 
     const modalBody = this.modal.modal.querySelector(".modal__body");
     modalBody.innerHTML = "";
