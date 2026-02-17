@@ -188,12 +188,10 @@ export default class Cart {
     let response = await fetch("https://httpbin.org/post", {
       method: "POST",
       body: new FormData(form),
-      headers: {
-        accept: "aaplication/json", // <- вот здесь
-      },
     });
 
-    let result = await response.json();
+    if (response.status != 200) return;
+
     this.modal.setTitle(`Success!`);
 
     const modalBody = this.modal.modal.querySelector(".modal__body");
