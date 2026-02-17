@@ -42,14 +42,19 @@ export default class CartIcon {
   }
 
   updatePosition() {
-    console.dir(document.documentElement.scrollTop);
-    let leftIndent =
+    const container = document.querySelector(".container");
+
+    if (!container) {
+      return;
+    }
+
+    const leftIndent =
       Math.min(
-        document.querySelector(".container").getBoundingClientRect().right + 20,
+        container.getBoundingClientRect().right + 20,
         document.documentElement.clientWidth - this.elem.offsetWidth - 10,
       ) + "px";
 
-    let isMobile = document.documentElement.clientWidth <= 767;
+    const isMobile = document.documentElement.clientWidth <= 767;
 
     if (!isMobile && document.documentElement.scrollTop >= 20) {
       Object.assign(this.elem.style, {
