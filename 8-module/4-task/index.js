@@ -188,6 +188,9 @@ export default class Cart {
     let response = await fetch("https://httpbin.org/post", {
       method: "POST",
       body: new FormData(form),
+      headers: {
+        accept: "aaplication/json", // <- вот здесь
+      },
     });
 
     let result = await response.json();
